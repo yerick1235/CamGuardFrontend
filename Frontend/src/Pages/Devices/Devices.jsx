@@ -95,13 +95,12 @@ export const Devices = () => {
             </div>
 
             <div style={{color:'white', display:'flex'}}>
+                PEZ
                 <p>Microfono:{listening ? 'on':'off'}</p>
                 <button onClick={SpeechRecognition.startListening}>Encender</button>
                 <button onClick={SpeechRecognition.stopListening}>Apagar</button>
                 <button onClick={resetTranscript}>Resetear</button>
                 <p>{transcript}</p>
-                <br />
-                pez
             </div>
         </div>
     )
