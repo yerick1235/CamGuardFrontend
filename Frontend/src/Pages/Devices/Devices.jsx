@@ -100,6 +100,8 @@ export const Devices = () => {
                 <button onClick={SpeechRecognition.stopListening}>Apagar</button>
                 <button onClick={resetTranscript}>Resetear</button>
                 <p>{transcript}</p>
+                <br />
+                pez
             </div>
         </div>
     )
