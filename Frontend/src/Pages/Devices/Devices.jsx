@@ -14,6 +14,10 @@ export const Devices = () => {
         browserSupportsSpeechRecognition
     }=useSpeechRecognition()
 
+    if (!('webkitSpeechRecognition' in window)) {
+        alert("Tu navegador no soporta reconocimiento de voz.");
+      }
+
     if(!browserSupportsSpeechRecognition){
         return <span>Tu navegador no soporta reconocimiento por voz</span>
     }
